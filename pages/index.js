@@ -1,42 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import ArticleList from '../Components/ArticleList'
-import styles from '../styles/Home.module.css'
+import Link from "next/link";
 
-export default function Home({articles}) {
-  const router = useRouter();
-  console.log(articles);
-
-  const handleClick = () => {
-    console.log('placing your order');
-    router.push('./products')
-  }
+export default function Home() {
 
   return (
     <div>
-     <ArticleList articles={articles} />
-     <Link href='./blog'>
-        blog page 
-     </Link>
-     <Link href='/products'>
-        <a> products page</a>
-     </Link>
-     <button onClick={handleClick}>
-       place order
-     </button>
+      <Link href='/posts'> posts page</Link>
     </div>
   )
 }
 
-export const getStaticProps = async() => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=6');
-  const articles = await res.json();
-
-  return {
-    props:{
-      articles
-    }
-  }
-}
