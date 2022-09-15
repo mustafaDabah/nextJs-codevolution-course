@@ -1,6 +1,94 @@
 {
-    "posts": 
-      [{
+    "events": [
+        {
+                "userId": 3,
+                "id": 21,
+                "title": "front end developer",
+                "body": "repellat aliquid praesentium dolorem quo sed totam minus non itaque nihil labore molestiae sunt dolor eveniet hic recusandae veniam tempora et tenetur expedita sunt",
+                "category":"sports",
+                "remotework":true
+            },
+            {
+                "userId": 3,
+                "id": 22,
+                "title": "front end developer",
+                "body": "eos qui et ipsum ipsam suscipit aut sed omnis non odio expedita earum mollitia molestiae aut atque rem suscipit nam impedit esse",
+                "category":"sports",
+                "remotework":false
+            },
+            {
+                "userId": 3,
+                "id": 23,
+                "title": "front end developer",
+                "body": "veritatis unde neque eligendi quae quod architecto quo neque vitae est illo sit tempora doloremque fugit quod et et vel beatae sequi ullam sed tenetur perspiciatis",
+                "category":"sports",
+                "remotework":false
+            },
+            {
+                "userId": 3,
+                "id": 24,
+                "title": "autem",
+                "body": "enim et ex nulla omnis voluptas quia qui voluptatem consequatur numquam aliquam sunt totam recusandae id dignissimos aut sed asperiores deserunt",
+                "category":"sports",
+                "remotework":false
+            },
+            {
+                "userId": 3,
+                "id": 25,
+                "title": "rem alias distinctio quo quis",
+                "body": "ullam consequatur ut omnis quis sit vel consequuntur ipsa eligendi ipsum molestiae et omnis error nostrum molestiae illo tempore quia et distinctio",
+                "category":"politics",
+                "remotework":true
+            },
+            {
+                "userId": 3,
+                "id": 26,
+                "title": "est et quae odit qui non",
+                "body": "similique esse doloribus nihil accusamus omnis dolorem fuga consequuntur reprehenderit fugit recusandae temporibus perspiciatis cum ut laudantium omnis aut molestiae vel vero",
+                "category":"politics",
+                "remotework":true
+            },
+            {
+                "userId": 3,
+                "id": 27,
+                "title": "quasi id et eos tenetur aut quo autem",
+                "body": "eum sed dolores ipsam sint possimus debitis occaecati debitis qui qui et ut placeat enim earum aut odit facilis consequatur suscipit necessitatibus rerum sed inventore temporibus consequatur",
+                "category":"politics",
+                "remotework":true
+            },
+            {
+                "userId": 3,
+                "id": 28,
+                "title": "delectus ullam et corporis nulla voluptas sequi",
+                "body": "non et quaerat ex quae ad maiores maiores recusandae totam aut blanditiis mollitia quas illo ut voluptatibus voluptatem similique nostrum eum",
+                "category":"econmy",
+                "remotework":true
+            },
+            {
+                "userId": 3,
+                "id": 29,
+                "title": "iusto eius quod necessitatibus culpa ea",
+                "body": "odit magnam ut saepe sed non qui tempora atque nihil accusamus illum doloribus illo dolor eligendi repudiandae odit magni similique sed cum maiores",
+                "category":"econmy",
+                "remotework":true
+            },
+            {
+                "userId": 3,
+                "id": 30,
+                "title": "a quo magni similique perferendis",
+                "body": "alias dolor cumque impedit blanditiis non eveniet odio maxime blanditiis amet eius quis tempora quia autem rem a provident perspiciatis quia",
+                "category":"sports",
+                "remotework":true
+            }
+        
+    ],
+    "dashboard": {
+        "posts": 5,
+        "likes": 100,
+        "followers": 20,
+        "following": 50
+    },
+    "posts": [{
             "userId": 1,
             "id": 1,
             "title": "mustafa dabah3",
@@ -17,6 +105,31 @@
             "id": 3,
             "title": "mmmm",
             "body": "et iusto sed quo iure voluptatem occaecati omnis eligendi aut ad voluptatem doloribus vel accusantium quis pariatur molestiae porro eius odio et labore et velit aut"
+        }
+    ],
+    "news": [{
+            "userId": 1,
+            "id": 1,
+            "title": "quidem molestiae enim",
+            "category": "sports"
+        },
+        {
+            "userId": 1,
+            "id": 2,
+            "title": "sunt qui excepturi placeat culpa",
+            "category": "politics"
+        },
+        {
+            "userId": 1,
+            "id": 3,
+            "title": "omnis laborum odio",
+            "category": "politics"
+        },
+        {
+            "userId": 1,
+            "id": 4,
+            "title": "non esse culpa molestiae omnis sed optio",
+            "category": "sports"
         }
     ]
 }
