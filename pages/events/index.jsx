@@ -14,17 +14,21 @@ function Events({ eventList }) {
         const data = await response.json();
 
         setEvents(data); 
-        router.push('/events?category=sports' , undefined , {shallow:true})
+        router.push(`/events?category=${inputValue}` , undefined , { shallow:true })
     }
 
-    console.log(remote)
+    console.log(event)
+    console.log(eventList)
 
   return (
     <div>
-      <form onClick={(e) => fetchSportsEvent(e)}>
+      <form >
         <input type='text' placeholder="name jop" onChange={(e) => setInputValue(e.target.value)} />
         <input type='text' placeholder="category" onChange={(e) => setCategory(e.target.value)} />
         <input type='checkbox' onChange={e => setRemote(!remote)}  />
+        <button onClick={(e) => fetchSportsEvent(e)}>
+            click
+        </button>
       </form>
       <h1>list of events</h1>
       <button onClick={fetchSportsEvent}>sports</button>
@@ -47,7 +51,8 @@ export default Events;
 export async function getServerSideProps(context) {
     const {query} = context;
     const {category} = query;
-    const queryString = category ? '?category=sports' : ' '
+    console.log(category)
+    const queryString = category ? `?category=${category}` : ' '
 
   const response = await fetch(`http://localhost:4000/events${queryString}`);
   const data = await response.json();

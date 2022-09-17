@@ -4,8 +4,7 @@ export default function Home() {
 
   return (
     <div>
-      <Link href='/posts'> posts page</Link>
+      <Link href='/comments'> posts page</Link>
     </div>
   )
 }
-
