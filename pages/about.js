@@ -9,7 +9,7 @@ function about() {
             <title>About codevolution</title>
             <meta name='description' content='hello world ' />
         </Head>
-        <div>about</div>
+        <div>about23</div>
     </>
   )
 }
