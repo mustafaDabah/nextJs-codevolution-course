@@ -1,23 +1,19 @@
-import 'bootstrap/dist/css/bootstrap.css'; // Add this line
-import '../styles/globals.css'
- // import "bootstrap/dist/js/bootstrap";
-import Navbar from '@/layout/Navbar';
-import Footer from '@/layout/Footer';
+import "bootstrap/dist/css/bootstrap.css"; // Add this line
+import "../styles/globals.css";
+import Navbar from "@/layout/Navbar";
+import {SessionProvider} from "next-auth/react"
 
 function MyApp({ Component, pageProps }) {
- 
-    if(Component.getLayout) {
-      return Component.getLayout(<Component {...pageProps} />)
-    }
-
-    return (
-      <>
-        <Navbar />
-          <Component {...pageProps} />
-        <Footer />  
-      </>
-    )
+  if (Component.getLayout) {
+    return Component.getLayout(<Component {...pageProps} />);
   }
- 
 
-export default MyApp
+  return (
+    <SessionProvider>
+      <Navbar />
+      <Component {...pageProps} />
+    </SessionProvider>
+  );
+}
+
+export default MyApp;
